@@ -31,7 +31,7 @@ I_num_sol = [u[1] for u in num_sol.u]
 # Plots 
 
 plot!(num_sol.t, I_num_sol, label = "I(t)")
-xlabel!("t, c")
+xlabel!("t")
 ylabel!("I")
 savefig("Нормированная интенсивность")
 
