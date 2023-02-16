@@ -38,8 +38,8 @@ I_num_sol = [u[1] for u in num_sol.u]
 
 # Plots 
 
-plot!(num_sol.t, I_num_sol, label = "I(t)")
-xlabel!("t")
+plot!(num_sol.t.* (t_p * 10 ^ 9), I_num_sol, label = "I(t)")
+xlabel!("t, нс")
 ylabel!("I")
 savefig("Нормированная интенсивность 2")
 
