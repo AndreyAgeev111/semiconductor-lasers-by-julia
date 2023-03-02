@@ -67,7 +67,7 @@ function model_modified(J_mod, s_mod, t_q_mod)
     plot!(num_sol.t.* (t_p * 10 ^ 9), N_two_num_sol, label = "N_2(t)")
     xlabel!("t, нс")
     ylabel!("I, N_1, N_2")
-    savefig("Нормированная интенсивность и концентрация от исходных данных exp")
+    savefig("Нормированная интенсивность и концентрация от исходных данных eexp")
 
 # Calculation
 
@@ -94,4 +94,4 @@ J_modified = [0.75, 1.25, 1.5, 2].* J
 s_modified = s / 2
 t_q_modified = t_q * 2
 
-model_modified(J_modified[4], s, t_q)
+model_modified(J, s, t_q_modified)
